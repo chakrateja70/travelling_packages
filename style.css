@@ -18,6 +18,10 @@ body {
     margin: 0px;
 }
 
+.logo {
+    width: 110px;
+}
+
 #navItem {
     color: #323f4b;
     font-size: 18px;
