@@ -18,10 +18,6 @@ body {
     margin: 0px;
 }
 
-.frontEnd-logo {
-    width: 120px;
-}
-
 #navItem {
     color: #323f4b;
     font-size: 18px;
@@ -38,23 +34,32 @@ body {
     background-image: url('https://static.wixstatic.com/media/2d34e5_b96feb5aa75f4ce19f5076356fb4ce9c~mv2.jpg/v1/fill/w_640,h_498,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2d34e5_b96feb5aa75f4ce19f5076356fb4ce9c~mv2.jpg');
     background-size: cover;
     padding: 18px;
-    min-height: 600px;
-}
-
-@media (max-width: 576px) {
-    .bannerSection {
-        min-height: 400px;
-    }
+    height: 100vh;
 }
 
 .banner-h1 {
     color: #ffffff;
     padding-bottom: 20px;
+    font-size: 45px;
 }
 
 .banner-description {
     color: #c1bebe;
-    font-size: 22px;
+    font-size: 24px;
+}
+
+@media screen and (min-width: 576px) {
+    .bannerSection {
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/ba/Delphi_BW_2017-10-08_11-38-38.jpg');
+    }
+
+    .banner-h1 {
+        font-size: 60px;
+    }
+
+    .banner-description {
+        font-size: 30px;
+    }
 }
 
 /* Package-Section */
@@ -115,11 +120,43 @@ body {
     font-weight: 600;
 }
 
-/* collection */
-.collection-section {
-    padding: 10px;
+@media screen and (min-width: 768px) {
+    .packgaes-h1 {
+        font-size: 36px;
+        font-weight: normal;
+    }
+
+    #flight {
+        min-height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flight-h1 {
+        font-size: 34px;
+        padding-bottom: 18px;
+        font-weight: normal;
+    }
+
+    #hotel {
+        min-height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hotel-h1 {
+        font-size: 34px;
+        padding-bottom: 18px;
+        font-weight: normal;
+    }
+
 }
 
+/* collection */
 .Collection-card {
     background-color: white;
     border-style: solid;
@@ -139,4 +176,22 @@ body {
     color: #000;
     font-weight: 600;
     padding: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .collection-h1 {
+        font-size: 36px;
+        font-weight: normal;
+    }
+}
+
+/* footer */
+.footer-section {
+    background-color: #0d2436;
+}
+
+.footer-section-address {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 14px;
 }
